@@ -1,0 +1,291 @@
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+}
+header {
+  background-color: #5c2d91;
+  color: #fff;
+  padding:  1rem 2rem;
+  display: flex;
+  justify-content: space-between; 
+}
+.header-left {
+ display: flex;
+ flex-direction: column;
+ 
+}
+
+.header-left  client-name {
+  margin: 0;
+  font-size: 1.8rem;
+}
+.header-left p {
+  margin: 1px 0;
+  font-size: 0.9rem;
+  }
+.nav-bar {
+  list-style: none;
+  display: flex;
+  gap: 20px;
+  margin: 9;
+  padding: 0;
+}
+.nav-bar li a {
+  text-decoration: none;
+  color: white;
+  font-size: 1rem;
+  transition: 0.3s;
+  margin-left: 1.5rem;
+}
+.nav-bar li a:hover {
+  color: yellow;
+  cursor: pointer;
+  text-decoration: underline;
+  font-weight: bold;
+}
+#about {
+align-items: flex-start;
+padding: 2rem;
+background-color: white;
+display: flex;
+
+}
+.about-text {
+display: flex;
+flex-direction: column;
+justify-content: flex-start;
+}
+
+#about img {
+width: 320px;
+height: 320px;
+border-radius: 50%;
+margin-top: 30px;
+margin-bottom: 1rem;
+margin-right: 70px;
+display: flex;
+justify-content: space-between;
+}
+#about h2 {
+font-size: 2rem;
+color: #5c2d91;
+margin-top: 110px;
+margin-bottom: 1px;
+
+}
+
+#about p {
+font-size: 25px;
+font-weight: 10%;
+color: grey;
+}
+
+.recommendation-section {
+display: flex;
+justify-content: left;
+gap: 2rem;
+margin-bottom: 4rem;
+margin-left:50px;
+flex-wrap: wrap;
+
+}
+#recommendations h2 {
+font-size: 2rem;
+color: #5c2d91;
+margin-bottom: 2rem;
+margin-left:50px;
+margin-top:50px;
+}
+
+
+
+.recommendation-box {
+width: 80%;
+border: 1px solid #ccc;
+border-radius: 12px;
+padding: 1.5rem;
+margin-bottom: 1.5rem;
+box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+background: #ffffff;
+text-align: center;
+flex: 1 1 calc(300px);
+max-width: 400px;
+
+
+}
+.recommendation-box p {
+font-size: 1rem;
+color: #4a4a4a;
+line-height: 1.6;
+}
+
+.recommendation-box::before {
+content: "“";
+font-size: 2rem;
+color: #5c2d91;
+}
+.recommendation-box::after {
+content: "”";
+font-size: 2rem;
+color: #5c2d91;
+}
+
+#leave-recommendation {
+flex: 0.5;                      /* Adjust width of the form */
+max-width: 800px;
+/* border-radius: 8px; */
+padding: 1.5rem;
+/*box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1); */
+background-color: white;
+text-align: center;
+margin: 0 auto;
+}
+#leave-recommendation h3 {
+font-size: 1.5rem;
+text-align: center;
+color: #5c2d91;
+margin-bottom: 1rem;
+}
+
+#leave-recommendation form {
+display: flex;
+text-align: center;
+flex-direction: column; /* Stack items vertically */
+gap: 1rem;              /* Add spacing between elements */
+}
+
+#leave-recommendation input,
+#leave-recommendation textarea {
+width: 100%;
+max-width: 800px;
+padding: 0.8rem;
+margin: 0.5rem 0;
+border: 1px solid #ddd;
+border-radius: 5px;
+font-size: 1rem;
+}
+#leave-recommendation textarea {
+min-height: 240px;
+resize: none;                   /* Disable resize */
+}
+
+#leave-recommendation button {
+display: block;
+width: 20%;
+padding: 0.75rem;
+font-color:#8B008B;
+background-color: #8B008B;
+color: #ffffff;
+border: none;
+border-radius: 4px;
+cursor: pointer;
+font-size: 1rem;
+transition: background-color 0.3s ease;
+font-weight: 500;
+margin: 0 auto;
+}
+
+#leave-recommendation button:hover {
+background-color: #4a148c;      /* Darken on hover */
+}
+
+.scroll-to-top {
+position: fixed;
+bottom: 1rem;
+right: 2rem;
+}
+.scroll-to-top button {
+width: 40px;
+height: 40px;
+border-radius: 50%;
+font-size: 1.2rem;
+background-color: #8B008B;
+color: #ffffff;
+display: flex;
+align-items: center;
+justify-content: center;
+
+}
+
+.scroll-to-top button:hover {
+background-color: #4a148c;      /* Darken on hover */
+}
+
+#about, #skills, #projects, #recommendations {
+ padding: 10px;
+  
+}
+
+.skills-container {
+  display: flex;
+  grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+  gap: 6rem;
+  margin: 0 auto;
+  max-width: 1200px;
+  flex-wrap: wrap;
+  
+}
+
+.skill img {
+  width: 50px;
+  height: 50px;
+  margin-bottom: 1rem;
+}
+
+.project {
+margin-bottom: 15px;
+
+}
+
+.recommendation-form {
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+form {
+display: flex;
+flex-direction: column;
+gap: 10px;
+}
+
+div.skill {
+box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+text-align: center;
+padding: 1.5rem;
+width: 250px;
+border-radius: 4px;
+transition: transform 0.3s ease;
+
+}
+.skills p {
+font-size: 0.9rem;
+color: #555;
+} 
+
+
+#skills h2 {
+font-size: 2rem;
+color: #5c2d91;
+margin-bottom: 2rem;
+margin-left:50px;
+margin-top:50px;
+}
+
+#projects h2 {
+font-size: 2rem;
+color: #5c2d91;
+margin-bottom: 2rem;
+margin-left:50px;
+margin-top:50px;
+}
+#projects h3 {
+margin-left:90px;
+}
+.project li {
+font-size: 20px ;
+left: 40px;
+margin-left:110px;
+
+} 
+
